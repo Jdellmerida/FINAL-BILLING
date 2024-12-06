@@ -4,8 +4,8 @@ Imports System.Security.Cryptography
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Public Class Form1
     Dim trynumber As Integer
-    Private Sub LOGINBTN_Click(sender As Object, e As EventArgs) Handles LOGINBTN.Click
-        LOGGED()
+    Private Sub LOGINBTN_Click(sender As Object, e As EventArgs)
+
     End Sub
 
     Sub LOGGED()
@@ -113,5 +113,13 @@ Public Class Form1
         Else
             PASSWORD.PasswordChar = "*"
         End If
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        LOGGED()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        ACCREGISTER.Show()
     End Sub
 End Class

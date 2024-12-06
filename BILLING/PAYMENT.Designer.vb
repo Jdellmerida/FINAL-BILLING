@@ -57,6 +57,10 @@ Partial Class PAYMENT
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label21 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -91,9 +95,9 @@ Partial Class PAYMENT
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(407, 380)
+        Me.Button1.Location = New System.Drawing.Point(405, 380)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 31)
+        Me.Button1.Size = New System.Drawing.Size(123, 39)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "PAY"
         Me.Button1.UseVisualStyleBackColor = True
@@ -346,7 +350,7 @@ Partial Class PAYMENT
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(611, 16)
+        Me.Label18.Location = New System.Drawing.Point(518, 18)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(69, 20)
         Me.Label18.TabIndex = 5
@@ -354,19 +358,64 @@ Partial Class PAYMENT
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(514, 380)
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(534, 379)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(184, 31)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "PRINT RECEIPT"
+        Me.Button2.Size = New System.Drawing.Size(159, 39)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Print Receipt"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(193, 95)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(17, 18)
+        Me.Label19.TabIndex = 7
+        Me.Label19.Text = "0"
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(193, 128)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(17, 18)
+        Me.Label20.TabIndex = 7
+        Me.Label20.Text = "0"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Enabled = False
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(509, 95)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(152, 26)
+        Me.TextBox3.TabIndex = 8
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.Location = New System.Drawing.Point(347, 99)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(156, 18)
+        Me.Label21.TabIndex = 7
+        Me.Label21.Text = "RECEIPT NUMBER"
         '
         'PAYMENT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(701, 438)
+        Me.ClientSize = New System.Drawing.Size(707, 438)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label20)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Label8)
@@ -375,7 +424,6 @@ Partial Class PAYMENT
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label17)
@@ -391,6 +439,7 @@ Partial Class PAYMENT
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.AMOUNTTB)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Name = "PAYMENT"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PAYMENT"
@@ -434,4 +483,8 @@ Partial Class PAYMENT
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label18 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label19 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label21 As Label
 End Class

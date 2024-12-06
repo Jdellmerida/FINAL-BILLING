@@ -3,7 +3,7 @@ Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class USERNAMEEE
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub USERNAME_Load(sender As Object, e As EventArgs) Handles MyBase.Load

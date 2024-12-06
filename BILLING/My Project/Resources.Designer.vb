@@ -63,9 +63,59 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property error_1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("error-1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property login_form_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("login form background", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property login_form_background1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("login form background1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property NOIMAGE() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("NOIMAGE", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property registration_acc_form_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("registration acc form background", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property registration_acc_form_background1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("registration acc form background1", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

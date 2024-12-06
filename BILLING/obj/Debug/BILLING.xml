@@ -22,7 +22,32 @@ BILLING
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:BILLING.My.Resources.Resources.error_1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BILLING.My.Resources.Resources.login_form_background">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BILLING.My.Resources.Resources.login_form_background1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:BILLING.My.Resources.Resources.NOIMAGE">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BILLING.My.Resources.Resources.registration_acc_form_background">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:BILLING.My.Resources.Resources.registration_acc_form_background1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

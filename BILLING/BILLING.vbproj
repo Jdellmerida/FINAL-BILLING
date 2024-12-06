@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACCREGISTER.Designer.vb">
+      <DependentUpon>ACCREGISTER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ACCREGISTER.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CONNECTION.vb" />
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -206,6 +212,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ACCREGISTER.resx">
+      <DependentUpon>ACCREGISTER.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BILLREPORT.rdlc" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -287,6 +296,9 @@
     <None Include="Resources\NOIMAGE.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="images\error-1.png" />
+    <None Include="images\login form background.png" />
+    <None Include="images\registration acc form background.png" />
     <Content Include="SqlServerTypes\Loader.cs" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
